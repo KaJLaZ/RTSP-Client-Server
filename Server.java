@@ -135,7 +135,7 @@ public class Server extends JFrame implements ActionListener {
         server.setSize(new Dimension(400, 200));
 
         //get RTSP socket port from the command line
-        int RTSPport = Integer.parseInt(argv[0]);
+        int RTSPport = 8554;
         server.RTSP_dest_port = RTSPport;
        
         //Initiate TCP connection with the client for the RTSP session

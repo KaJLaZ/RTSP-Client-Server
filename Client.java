@@ -160,12 +160,12 @@ public class Client {
         
         //get server RTSP port and IP address from the command line
         //------------------
-        int RTSP_server_port = Integer.parseInt(argv[1]);
-        String ServerHost = argv[0];
+        int RTSP_server_port = 8554;
+        String ServerHost = "127.0.0.1";
         theClient.ServerIPAddr = InetAddress.getByName(ServerHost);
 
         //get video filename to request:
-        VideoFileName = argv[2];
+        VideoFileName = "C:/Users/user/IdeaProjects/RTSP-Client-Server/movie.Mjpeg";
 
         //Establish a TCP connection with the server to exchange RTSP messages
         //------------------
